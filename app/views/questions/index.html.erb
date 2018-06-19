@@ -1,1 +1,58 @@
-<h1>Welcome to Survey of DataBase System Study Guide</h1>
+
+<div>
+<h1>Survey of Database Systems Study Guide
+</h1>
+</div>
+<% @questions.each do |question| %>
+
+
+
+<div>
+
+<br />
+<br />    
+<h2><%= question.question %></h2>
+<h3><i><%= question.answer %></i></h3>
+
+<a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+
+<button class = "btn btn-primary" title = "Bootstrap tooltip" data-toggle = "tooltip">Answer</button>
+
+
+  </div>
+
+  <div>
+    <a href="#" title="Header" data-toggle="popover" data-trigger="hover" data-content="Some content">Hover over me</a>
+  </div>
+
+<hr />
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover(); 
+});
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+</script>
+<srcipt src = "bootstrap/js/bootstrap.min.js"></srcipt>
+
+  <script type = "text/javascript">
+  $(document).ready(function () {
+
+    $('[data-toggle="tooltip"]').tooltip();
+
+
+  });
+</script>
+
+
+<script src="bootstrap/js/jquery.js"></script>
+<script src="bootstrap/js/bootstrap-alert.js"></script>
+<script src="bootstrap/js/bootstrap-modal.js"></script>
+<script src="bootstrap/js/bootstrap-transition.js"></script>
+<script src="bootstrap/js/bootstrap-tooltip.js"></script>
+<script src="bootstrap/js/bootstrap-popover.js"></script>
+
+
+<% end %>ß
